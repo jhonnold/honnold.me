@@ -1,0 +1,22 @@
+env:
+  es2020: true
+  node: true
+extends:
+  - airbnb
+  - prettier
+  - prettier/react
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 11
+  sourceType: module
+plugins:
+  - react
+ignorePatterns:
+  - gatsby-*.js
+  - tailwind.config.js
+  - '$virtual'
+rules:
+  jsx-a11y/label-has-associated-control:
+    - error
+    - assert: either
