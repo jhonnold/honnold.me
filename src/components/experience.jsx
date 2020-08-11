@@ -24,7 +24,7 @@ const Experience = () => {
             <div className="flex flex-col justify-center items-center container mx-auto">
                 <h2 className="text-xl">Experience</h2>
                 {site.siteMetadata.experience.map(e => (
-                    <article className="w-full my-8">
+                    <article className="w-full my-8" key={e.start}>
                         <h3 className="flex flex-wrap items-center justify-between mb-2">
                             <span className="w-full md:w-auto">
                                 <span className="text-gold text-lg">{e.title}</span> 

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Section = ({ children, dark, id }) => (
-    <section id={id} className={`min-h-screen p-4 flex ${dark ? 'bg-navy' : 'bg-white'} ${dark ? 'text-white' : 'text-navy'}`}>
+    <section id={id} className={`min-h-screen p-4 flex ${dark ? 'bg-navy text-white' : 'bg-white text-navy'}`}>
         {children}
     </section>
 );
