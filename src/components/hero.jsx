@@ -9,7 +9,7 @@ const Hero = () => {
 
     return (
         <Section dark id="hero">
-            <div className="flex flex-col justify-center items-center flex-1">
+            <div className="flex flex-col justify-center items-center container mx-auto">
                 <h1 className="text-4xl md:text-6xl my-4 font-mono">
                     <span className="text-gold">Hello,</span>
                     <span>&nbsp;World!</span>
@@ -22,7 +22,6 @@ const Hero = () => {
                     <p>{"  experience: '3.5 years',"}</p>
                     <p>{`  age: ${age},`}</p>
                     <p>{'  developer: true,'}</p>
-                    <p>{'  designer: true,'}</p>
                     <p>{'};'}</p>
                 </pre>
             </div>

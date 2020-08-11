@@ -7,6 +7,11 @@ module.exports = {
     siteMetadata: {
         title: 'Jay Honnold',
         description: 'Jay Honnold\'s Portfolio and Website',
+        about: 'I am a full-stack developer with experience in React, Spring, Express, Rails, and SQL databases. Throughout my career I have designed, built, and maintained different projects, utilizing the agile framework.',
+        links: {
+            github: 'https://github.com/jhonnold',
+            linkedin: 'https://google.com',
+        },
     },
     plugins: [
         'gatsby-plugin-eslint',
