@@ -1,8 +1,10 @@
-// See https://tailwindcss.com/docs/configuration for details
 module.exports = {
     purge: ['./src/**/*.{js,jsx}'],
-    theme: {},
+    theme: {
+        white: '#fafafa',
+        gold: '#ffac00',
+        navy: '#011c27'
+    },
     variants: {},
-    // https://github.com/tailwindcss/custom-forms
-    plugins: [require('@tailwindcss/custom-forms')],
+    plugins: [],
 };
