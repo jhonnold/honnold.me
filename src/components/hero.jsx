@@ -10,10 +10,10 @@ const Hero = () => {
     return (
         <Section dark id="hero">
             <div className="flex flex-col justify-center items-center container mx-auto">
-                <h1 className="text-4xl md:text-6xl my-4 font-mono">
+                <h2 className="text-4xl md:text-6xl my-4 font-mono">
                     <span className="text-gold">Hello,</span>
                     <span>&nbsp;World!</span>
-                </h1>
+                </h2>
                 <pre className="text-xs md:text-base">
                     <p>
                         const <span className="text-gold font-semibold">Jay</span> = {'{'}
