@@ -1,9 +1,15 @@
+const colors = {
+    white: '#fafafa',
+    gold: '#ffac00',
+    navy: '#011c27',
+};
+
 module.exports = {
     purge: ['./src/**/*.{js,jsx}'],
     theme: {
-        white: '#fafafa',
-        gold: '#ffac00',
-        navy: '#011c27'
+        ...colors,
+        backgroundColor: colors,
+        textColor: colors,
     },
     variants: {},
     plugins: [],
