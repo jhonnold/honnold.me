@@ -59,7 +59,7 @@ module.exports = {
                 background_color: fullConfig.theme.colors.white,
                 theme_color: fullConfig.theme.colors.navy,
                 display: 'minimal-ui',
-                icon: 'src/images/icon.svg',
+                icon: 'src/images/icon.webp',
             },
         },
         {
