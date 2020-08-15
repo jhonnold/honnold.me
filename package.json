@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.17",
     "gatsby": "2.24.37",
     "gatsby-plugin-manifest": "2.4.22",
     "gatsby-plugin-offline": "3.2.22",
     "gatsby-plugin-postcss": "2.3.11",
     "gatsby-plugin-react-helmet": "3.3.10",
-    "gatsby-plugin-sharp": "2.6.25",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",

@@ -20,8 +20,8 @@ const Experience = () => {
     `);
 
     return (
-        <Section dark id="experience">
-            <div className="flex flex-col justify-center items-center container mx-auto">
+        <Section dark>
+            <div className="flex flex-col justify-center items-center container mx-auto p-4">
                 <h2 className="text-xl">Experience</h2>
                 {site.siteMetadata.experience.map(e => (
                     <article className="w-full my-8" key={e.start}>

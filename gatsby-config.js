@@ -46,6 +46,38 @@ module.exports = {
                     'Developed new website for firm selling branded flash drives. Modified firm’s CRM system to work with the new website and automatically generate sales reports. Built with HTML, CSS, and vanilla javascript.',
             },
         ],
+        works: [
+            {
+                title: 'Fortnite Tracking Website - FN Dash',
+                stack: ['Flask', 'Celery', 'React', 'Docker', 'PostgreSQL'],
+                image: 'fndash.png',
+            },
+            {
+                title: 'React Chart.JS Wrapper',
+                stack: ['React', 'Chart.js'],
+                image: 'chartjs.png',
+            },
+            {
+                title: 'Fortnite Tracking Website - FN Dash',
+                stack: ['Flask', 'Celery', 'React', 'Docker', 'PostgreSQL'],
+                image: 'sam-miller.png',
+            },
+            {
+                title: 'Fortnite Tracking Website - FN Dash',
+                stack: ['Flask', 'Celery', 'React', 'Docker', 'PostgreSQL'],
+                image: 'coder-website.png',
+            },
+            {
+                title: 'Fortnite Tracking Website - FN Dash',
+                stack: ['Flask', 'Celery', 'React', 'Docker', 'PostgreSQL'],
+                image: 'coder-platform.png',
+            },
+            {
+                title: 'Fortnite Tracking Website - FN Dash',
+                stack: ['Flask', 'Celery', 'React', 'Docker', 'PostgreSQL'],
+                image: 'ace-anatomy.png',
+            },
+        ],
     },
     plugins: [
         'gatsby-plugin-eslint',

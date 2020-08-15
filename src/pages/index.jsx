@@ -1,15 +1,29 @@
 import React from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
 import Hero from '../components/hero';
 import About from '../components/about';
 import Experience from '../components/experience';
+import Works from '../components/works';
 import SEO from '../components/seo';
 
 const IndexPage = () => (
     <main>
         <SEO keywords={['developer', 'fullstack', 'software', 'portfolio']} />
-        <Hero />
-        <About />
-        <Experience />
+        <ReactFullpage
+            licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
+            navigation
+            anchors={['top', 'about', 'experience', 'works']}
+            sectionSelector="section"
+            scrollOverflow
+            render={() => (
+                <ReactFullpage.Wrapper>
+                    <Hero />
+                    <About />
+                    <Experience />
+                    <Works />
+                </ReactFullpage.Wrapper>
+            )}
+        />
     </main>
 );
 

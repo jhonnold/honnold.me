@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Section = ({ children, dark, id }) => (
-    <section id={id} className={`min-h-screen p-4 flex ${dark ? 'bg-navy text-white' : 'bg-white text-navy'}`}>
+const Section = ({ children, dark }) => (
+    <section className={dark ? 'bg-navy text-white' : 'bg-white text-navy'}>
         {children}
     </section>
 );
@@ -13,7 +13,6 @@ Section.defaultProps = {
 
 Section.propTypes = {
     children: PropTypes.node.isRequired,
-    id: PropTypes.string.isRequired,
     dark: PropTypes.bool,
 };
 

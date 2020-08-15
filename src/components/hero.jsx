@@ -8,8 +8,8 @@ const Hero = () => {
     const age = Math.floor((new Date().getTime() - BIRTHDAY.getTime()) / MS_IN_YEAR);
 
     return (
-        <Section dark id="hero">
-            <div className="flex flex-col justify-center items-center container mx-auto">
+        <Section dark>
+            <div className="flex flex-col justify-center items-center container mx-auto p-4">
                 <h2 className="text-4xl md:text-6xl my-4 font-mono">
                     <span className="text-gold">Hello,</span>
                     <span>&nbsp;World!</span>
