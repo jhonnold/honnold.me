@@ -10,6 +10,9 @@ module.exports = {
         ...colors,
         backgroundColor: colors,
         textColor: colors,
+        minHeight: {
+            215: '215px',
+        }
     },
     variants: {},
     plugins: [],

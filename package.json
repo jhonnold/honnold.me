@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.17",
+    "devicon": "^2.2.0",
     "gatsby": "2.24.37",
     "gatsby-plugin-manifest": "2.4.22",
     "gatsby-plugin-offline": "3.2.22",
