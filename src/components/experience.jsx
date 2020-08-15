@@ -27,8 +27,7 @@ const Experience = () => {
                     <article className="w-full my-8" key={e.start}>
                         <h3 className="flex flex-wrap items-center justify-between mb-2">
                             <span className="w-full md:w-auto">
-                                <span className="text-gold text-lg">{e.title}</span> 
-                                {' '}{e.company}
+                                <span className="text-gold text-lg">{e.title}</span> {e.company}
                             </span>
                             <span className="text-base md:text-lg">
                                 {e.start} - {e.end}
