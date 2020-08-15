@@ -8,10 +8,10 @@ module.exports = {
         title: 'Jay Honnold',
         description: "Jay Honnold's Portfolio and Website",
         about:
-            'I am a full-stack developer with experience in React, Spring, Express, Rails, and SQL databases. Throughout my career I have designed, built, and maintained different projects, utilizing the agile framework.',
+            "I am a full-stack developer with experience working in multiple web and backend frameworks. Throughout my career I have designed, built, and maintained many different projects. Being thorough in nature, I'm determined to write code that is elegant, maintainable, and secure.",
         links: {
             github: 'https://github.com/jhonnold',
-            linkedin: 'https://google.com',
+            linkedin: 'https://www.linkedin.com/in/jay-honnold-123275140/',
         },
         experience: [
             {
@@ -19,7 +19,8 @@ module.exports = {
                 company: 'Allstate',
                 start: 'March 2019',
                 end: 'Present',
-                details: 'Working with Java, Spring, Node, Express, Javascript, React, Redux, and MSSQL',
+                details:
+                    'Developed an internal product which automatically collects relavant risk and security information on application artifacts and determines production deployment readiness. Refactored the API from a single codebase into multiple microservices. Rewrote the UI to meet accessiblity standards and present collected data in a clear and concise manner. Used React, JS, Java, Spring, Node, Express, and MSSQL.',
             },
             {
                 title: 'Full-Stack Developer',
@@ -117,7 +118,7 @@ module.exports = {
                 background_color: fullConfig.theme.colors.white,
                 theme_color: fullConfig.theme.colors.navy,
                 display: 'minimal-ui',
-                icon: 'src/images/icon.webp',
+                icon: 'static/icon.webp',
             },
         },
         {

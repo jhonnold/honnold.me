@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const colors = {
     white: '#fafafa',
     gold: '#ffac00',
@@ -12,7 +14,12 @@ module.exports = {
         textColor: colors,
         minHeight: {
             215: '215px',
-        }
+        },
+        extend: {
+            fontFamily: {
+                sans: ['Lato', ...defaultTheme.fontFamily.sans],
+            },
+        },
     },
     variants: {},
     plugins: [],
