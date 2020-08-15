@@ -12,7 +12,7 @@ const IndexPage = () => (
         <ReactFullpage
             licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
             navigation
-            anchors={['top', 'about', 'experience', 'works']}
+            navigationTooltips={['Home', 'About', 'Experience', 'Works']}
             sectionSelector="section"
             scrollOverflow
             render={() => (
