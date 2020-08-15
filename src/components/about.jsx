@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Section from './section';
 
 const About = () => {
@@ -27,14 +28,14 @@ const About = () => {
                     <p className="font-light mb-4">{site.siteMetadata.specific}</p>
                     <ul className="flex text-3xl justify-center md:justify-start">
                         <li className="mr-4">
-                            <a href={site.siteMetadata.links.github}>
+                            <OutboundLink href={site.siteMetadata.links.github}>
                                 <i className="devicon-github-plain" />
-                            </a>
+                            </OutboundLink>
                         </li>
                         <li className="mx-4">
-                            <a href={site.siteMetadata.links.linkedin}>
+                            <OutboundLink href={site.siteMetadata.links.linkedin}>
                                 <i className="devicon-linkedin-plain" />
-                            </a>
+                            </OutboundLink>
                         </li>
                     </ul>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Section from './section';
 
 const Works = () => {
@@ -32,9 +33,9 @@ const Works = () => {
                                 }`}
                             >
                                 {w.href ? (
-                                    <a target="_blank" rel="noopener noreferrer" href={w.href}>
+                                    <OutboundLink href={w.href}>
                                         <img className="w-full min-h-215" src={w.image} alt={w.title} />
-                                    </a>
+                                    </OutboundLink>
                                 ) : (
                                     <img className="w-full min-h-215" src={w.image} alt={w.title} />
                                 )}
