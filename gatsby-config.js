@@ -9,6 +9,8 @@ module.exports = {
         description: "Jay Honnold's Portfolio and Website",
         about:
             "I am a full-stack developer with experience working in multiple web and backend frameworks. Throughout my career I have designed, built, and maintained many different projects. Being thorough in nature, I'm determined to write code that is elegant, maintainable, and secure.",
+        specific:
+            'Specifically, I have worked a majority of my frontend career in React, though Vue and Svelte seem quite interesting to me. On the backend I have worked equals parts in Spring and Express in combination with many different SQL databases. I\'m always interested in learning more and welcome the idea of trying something new!',
         links: {
             github: 'https://github.com/jhonnold',
             linkedin: 'https://www.linkedin.com/in/jay-honnold-123275140/',
