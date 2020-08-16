@@ -11,7 +11,7 @@ const Hero = () => (
             </h2>
             <div className="w-full">
                 <div className="container mx-auto px-8 flex justify-center">
-                    <img src={HeroSVG} alt="Developer table" className="min-w-32" />
+                    <img src={HeroSVG} alt="Developer table" className="min-w-32 h-48 md:h-auto" />
                 </div>
             </div>
             <hr className="w-full -m-px border-2 border-white" />

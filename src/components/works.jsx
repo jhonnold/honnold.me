@@ -21,10 +21,10 @@ const Works = ({ works, images }) => (
                             >
                                 {w.href ? (
                                     <OutboundLink href={w.href}>
-                                        <Img className="w-full min-h-215" fluid={fluid} alt={w.title} />
+                                        <Img className="w-full" fluid={fluid} alt={w.title} />
                                     </OutboundLink>
                                 ) : (
-                                    <Img className="w-full min-h-215" fluid={fluid} alt={w.title} />
+                                    <Img className="w-full" fluid={fluid} alt={w.title} />
                                 )}
                                 <div className="px-6 py-4 bg-white flex-1 flex flex-col justify-between">
                                     <h3 className="text-lg">{w.title}</h3>

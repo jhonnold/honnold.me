@@ -17,9 +17,6 @@ module.exports = {
             fontFamily: {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans],
             },
-            minHeight: {
-                215: '215px',
-            },
             minWidth: {
                 32: '32rem',
             },
