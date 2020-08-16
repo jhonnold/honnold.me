@@ -1,3 +1,4 @@
+const path = require('path');
 const resolveConfig = require('tailwindcss/resolveConfig');
 const tailwindConfig = require('./tailwind.config.js');
 
@@ -53,14 +54,14 @@ module.exports = {
             {
                 title: 'FN Dash',
                 stack: ['devicon-python-plain', 'devicon-react-original', 'devicon-postgresql-plain'],
-                image: 'fndash.png',
+                image: 'works/fndash.png',
                 description: 'Fortnite statistics tracking website. Data collection is automatic upon registration.',
                 href: 'https://fndash.honnold.me',
             },
             {
                 title: '@jhonnold/react-chart.js',
                 stack: ['devicon-react-original'],
-                image: 'chartjs.png',
+                image: 'works/chartjs.png',
                 description: 'React wrapper for the popular Chart.js library.',
                 href: 'https://jhonnold.github.io/react-chart.js/#/',
             },
@@ -73,7 +74,7 @@ module.exports = {
                     'devicon-html5-plain',
                     'devicon-foundation-plain',
                 ],
-                image: 'coder-website.png',
+                image: 'works/coder-website.png',
                 description: 'Main website for Coder Inc.',
                 href: 'https://codernetwork.io/',
             },
@@ -81,7 +82,7 @@ module.exports = {
                 title: 'Coder Platform',
                 stack: ['devicon-rails-plain', 'devicon-react-original', 'devicon-postgresql-plain'],
                 description: 'Backlog tool that brings clients closer to projects by reporting out progress live.',
-                image: 'coder-platform.png',
+                image: 'works/coder-platform.png',
             },
             {
                 title: 'Blogging Site',
@@ -92,7 +93,7 @@ module.exports = {
                     'devicon-postgresql-plain',
                 ],
                 description: 'Personal blog built for a friend. LaTeX support built in for advanced text formatting.',
-                image: 'sam-miller.png',
+                image: 'works/sam-miller.png',
             },
             {
                 title: 'Ace Anatomy Homepage',
@@ -103,7 +104,7 @@ module.exports = {
                     'devicon-foundation-plain',
                 ],
                 description: 'Main webiste for Ace Anatomy.',
-                image: 'ace-anatomy.png',
+                image: 'works/ace-anatomy.png',
                 href: 'https://aceanatomy.com/',
             },
         ],
@@ -131,7 +132,7 @@ module.exports = {
                 background_color: fullConfig.theme.colors.white,
                 theme_color: fullConfig.theme.colors.navy,
                 display: 'minimal-ui',
-                icon: 'static/icon.webp',
+                icon: 'src/images/icon.webp',
             },
         },
         {
@@ -145,5 +146,14 @@ module.exports = {
             },
         },
         'gatsby-plugin-offline',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'images',
+                path: path.join(__dirname, 'src', 'images'),
+            },
+        },
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
     ],
 };

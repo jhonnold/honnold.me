@@ -1,32 +1,19 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import Img from 'gatsby-image';
 import Section from './section';
 
-const Works = () => {
-    const { site } = useStaticQuery(graphql`
-        query WorksQuery {
-            site {
-                siteMetadata {
-                    works {
-                        title
-                        stack
-                        image
-                        href
-                        description
-                    }
-                }
-            }
-        }
-    `);
+const Works = ({ works, images }) => (
+    <Section>
+        <div className="mx-auto p-4">
+            <h2 className="text-2xl text-center mb-8">Current & Previous Work</h2>
+            <div className="flex flex-wrap container mx-auto items-stretch">
+                {works.map(w => {
+                    const img = images.edges.find(e => e.node.relativePath === w.image);
+                    const { fluid } = img.node.childImageSharp;
 
-    return (
-        <Section>
-            <div className="mx-auto p-4">
-                <h2 className="text-2xl text-center mb-8">Current & Previous Work</h2>
-                <div className="flex flex-wrap container mx-auto items-stretch">
-                    {site.siteMetadata.works.map(w => (
-                        <div className="lg:w-1/3 md:w-1/2 p-4" key={w.title}>
+                    return (
+                        <div className="lg:w-1/3 sm:w-1/2 w-full p-4" key={w.title}>
                             <div
                                 className={`overflow-hidden shadow-md h-full flex flex-col ${
                                     w.href ? 'transform hover:scale-105 transition duration-100 cursor-pointer' : ''
@@ -34,10 +21,10 @@ const Works = () => {
                             >
                                 {w.href ? (
                                     <OutboundLink href={w.href}>
-                                        <img className="w-full min-h-215" src={w.image} alt={w.title} />
+                                        <Img className="w-full min-h-215" fluid={fluid} alt={w.title} />
                                     </OutboundLink>
                                 ) : (
-                                    <img className="w-full min-h-215" src={w.image} alt={w.title} />
+                                    <Img className="w-full min-h-215" fluid={fluid} alt={w.title} />
                                 )}
                                 <div className="px-6 py-4 bg-white flex-1 flex flex-col justify-between">
                                     <h3 className="text-lg">{w.title}</h3>
@@ -52,11 +39,11 @@ const Works = () => {
                                 </div>
                             </div>
                         </div>
-                    ))}
-                </div>
+                    );
+                })}
             </div>
-        </Section>
-    );
-};
+        </div>
+    </Section>
+);
 
 export default Works;
