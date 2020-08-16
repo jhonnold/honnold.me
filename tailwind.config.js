@@ -12,12 +12,16 @@ module.exports = {
         ...colors,
         backgroundColor: colors,
         textColor: colors,
+        borderColor: colors,
         extend: {
             fontFamily: {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans],
             },
             minHeight: {
                 215: '215px',
+            },
+            minWidth: {
+                32: '32rem',
             },
         },
     },

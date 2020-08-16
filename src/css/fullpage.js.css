@@ -1,8 +1,14 @@
 #fp-nav ul li a span {
     background: none !important;
-    border: 1px solid theme('gold') !important;
+    border: 2px solid theme('gold') !important;
 }
 
 #fp-nav ul li .fp-tooltip {
     color: theme('gold') !important;
+}
+
+@media only screen and (max-width: theme('screens.md')) {
+    #fp-nav.fp-right {
+        right: 0px !important;
+    }
 }
