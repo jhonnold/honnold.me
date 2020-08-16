@@ -12,12 +12,12 @@ module.exports = {
         ...colors,
         backgroundColor: colors,
         textColor: colors,
-        minHeight: {
-            215: '215px',
-        },
         extend: {
             fontFamily: {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans],
+            },
+            minHeight: {
+                215: '215px',
             },
         },
     },

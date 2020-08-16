@@ -5,7 +5,7 @@ import Section from './section';
 
 const About = ({ about, specific, links, image }) => (
     <Section>
-        <div className="flex flex-col md:flex-row justify-center items-center container mx-auto p-4 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-center items-center container mx-auto p-8 text-center md:text-left">
             <div className="md:mr-16 order-2 md:order-1">
                 <h1 className="text-3xl md:text-4xl my-4">Jay Honnold</h1>
                 <p className="font-light mb-2">{about}</p>
