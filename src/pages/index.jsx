@@ -68,7 +68,7 @@ export const query = graphql`
                     name
                     childImageSharp {
                         fluid {
-                            ...GatsbyImageSharpFluid_withWebp
+                            ...GatsbyImageSharpFluid_withWebp_tracedSVG
                         }
                     }
                 }
@@ -77,7 +77,7 @@ export const query = graphql`
         aboutImage: file(relativePath: { eq: "jay.jpg" }) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid_withWebp
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
             }
         }
