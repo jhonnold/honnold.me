@@ -56,7 +56,7 @@ module.exports = {
                 stack: ['devicon-python-plain', 'devicon-react-original', 'devicon-postgresql-plain'],
                 image: 'works/fndash.png',
                 description: 'Fortnite statistics tracking website. Data collection is automatic upon registration.',
-                href: 'https://fndash.honnold.me',
+                href: 'https://fndash.com',
             },
             {
                 title: '@jhonnold/react-chart.js',
