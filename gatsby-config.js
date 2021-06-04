@@ -18,10 +18,18 @@ module.exports = {
         },
         experience: [
             {
+                title: 'SDE',
+                company: 'Amazon',
+                start: 'February 2021',
+                end: 'Present',
+                details:
+                    'Working with Java Spring and AWS',
+            },
+            {
                 title: 'Full-Stack Developer',
                 company: 'Allstate',
                 start: 'March 2019',
-                end: 'Present',
+                end: 'January 2021',
                 details:
                     'Developed an internal product which automatically collects relavant risk and security information on application artifacts and determines production deployment readiness. Refactored the API from a single codebase into multiple microservices. Rewrote the UI to meet accessiblity standards and present collected data in a clear and concise manner. Used React, JS, Java, Spring, Node, Express, and MSSQL.',
             },
@@ -65,7 +73,13 @@ module.exports = {
                 description: 'React wrapper for the popular Chart.js library.',
                 href: 'https://jhonnold.github.io/react-chart.js/#/',
             },
-
+            {
+                title: 'Berserk Chess Engine',
+                stack: ['devicon-c-plain'],
+                image: 'works/berserk.jpg',
+                description: 'UCI compliant chess engine written in C.',
+                href: 'https://github.com/jhonnold/berserk',
+            },
             {
                 title: 'Coder Website',
                 stack: [
