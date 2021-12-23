@@ -77,7 +77,7 @@ module.exports = {
                 title: 'Berserk Chess Engine',
                 stack: ['devicon-c-plain'],
                 image: 'works/berserk.jpg',
-                description: 'UCI compliant chess engine written in C.',
+                description: 'UCI compliant chess engine written in C. Uses a self-trained a nueral net evaluation.',
                 href: 'https://github.com/jhonnold/berserk',
             },
             {
