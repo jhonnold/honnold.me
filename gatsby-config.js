@@ -18,12 +18,12 @@ module.exports = {
         },
         experience: [
             {
-                title: 'SDE',
+                title: 'SDE I',
                 company: 'Amazon',
                 start: 'February 2021',
                 end: 'Present',
                 details:
-                    'Working with Java Spring and AWS',
+                    'Developing and maintaing an order ingestion layer within Multi-Channel Fulfillment. Work has included designing and building new features, upgrading and modernizing legacy systems, as well as debugging and resolving operation related issues.',
             },
             {
                 title: 'Full-Stack Developer',
@@ -77,7 +77,7 @@ module.exports = {
                 title: 'Berserk Chess Engine',
                 stack: ['devicon-c-plain'],
                 image: 'works/berserk.jpg',
-                description: 'UCI compliant chess engine written in C. Uses a self-trained a nueral net evaluation.',
+                description: 'UCI compliant chess engine written in C. Utilizes an optimized minimax search with a self-trained neural net evaluation.',
                 href: 'https://github.com/jhonnold/berserk',
             },
             {
